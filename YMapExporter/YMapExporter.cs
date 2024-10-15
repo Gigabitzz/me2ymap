@@ -126,8 +126,8 @@ namespace YMapExporter
 
             foreach (var placement in spoonerPlacements.Placements)
             {
-                var model = placement.HashName;
-                if (string.IsNullOrEmpty(model)) model = placement.ModelHash;
+                var model = placement.ModelHash;
+                if (string.IsNullOrEmpty(model)) model = placement.HashName;
 
                 var position = placement.PositionRotation.GetPosition();
                 var rotation = placement.PositionRotation.GetQuaternion();
