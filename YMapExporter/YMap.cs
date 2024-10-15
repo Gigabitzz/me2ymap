@@ -279,11 +279,11 @@ namespace YMapExporter
 
         [XmlElement("lodDist")]
         [Category("Render")]
-        public XmlValue<float> LodDistance { get; set; } = new XmlValue<float>(500);
+        public XmlValue<float> LodDistance { get; set; } = new XmlValue<float>(60);
 
         [XmlElement("childLodDist")]
         [Category("Render")]
-        public XmlValue<float> ChildLodDistance { get; set; } = new XmlValue<float>(500);
+        public XmlValue<float> ChildLodDistance { get; set; } = new XmlValue<float>(0);
 
         [XmlElement("lodLevel")]
         [Category("Render")]
